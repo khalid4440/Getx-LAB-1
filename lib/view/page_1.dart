@@ -7,17 +7,13 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('page 1'),
-      ),
+      appBar: AppBar(title: const Text('Page1')),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            // Navigator.pop(context);
             Get.back();
           },
-          child: Text('Back to hemo page'),
+          child: const Text('Back'),
         ),
       ),
     );
