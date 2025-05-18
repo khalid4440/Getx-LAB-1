@@ -42,6 +42,8 @@ class MyHomePage extends StatelessWidget {
           onPressed: () {
             //Get.to(() => Page1());
             //Get.offAll(Page1());
+
+            // khalid
             
             Get.toNamed('/page-1');
           },
