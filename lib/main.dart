@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:getx_lab/view/page_1.dart';
 
 void main() {
+  // second route management way
   runApp(
     GetMaterialApp(
       home: const MyApp(),
@@ -20,7 +21,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
       ),
       home: const MyHomePage(),
     );
@@ -40,10 +40,9 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            
             Get.toNamed('/page-1');
           },
-          child: Text('to Page 1'),
+          child: Text('Go to page 1'),
         ),
       ),
     );
